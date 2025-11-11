@@ -16,7 +16,7 @@ function Tasks({ tasks, onTaskClick, onDeleteTaskClick }) {
           <button
             onClick={() => onTaskClick(task.id)}
             className={`text-left bg-slate-400 text-white p-2 rounded-md w-full ${
-              task.isCompleted && "line-through"
+              task.isCompleted && "bg-green-300"
             }`}
           >
             {task.title}
